@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div className="space-y-2">
             <div className="flex space-x-4">
-            <Link href="https://www.instagram.com/artwinebar_nagoya_design_compe" target="_blank" aria-label="アートワインバーコンペ Instagram">
+            <Link href="https://www.instagram.com/artwinebar_nagoya_design_conpe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="アートワインバーコンペ Instagram">
               <Instagram />
             </Link>
             <Link href="https://www.instagram.com/artwinebarnagoya0w0" target="_blank" aria-label="アートワインバー名古屋 Instagram">
@@ -15,9 +15,6 @@ const Footer = () => {
             </Link>
             <Link href="https://www.instagram.com/tonkan_nagoya" target="_blank" aria-label="TONKAN名古屋 Instagram">
               <Instagram />
-            </Link>
-            <Link href="https://artwinebar-nagoya.com" target="_blank" aria-label="アートワインバー名古屋 ウェブサイト">
-              <Facebook />
             </Link>
                 </div>
             </div>
