@@ -21,14 +21,14 @@ export default function RootLayout({
       <meta property="og:description" content="アートワインバー名古屋デザインコンペティション2024" />
       <meta property="og:url" content="https://competition-cst.vercel.app/" />
       <meta property="og:site_name" content="アートワインバー コンペ" />
-      <meta property="og:image" content="https://competition-cst.vercel.app//opengraph-image.png" />
+      <meta property="og:image" content="https://competition-cst.vercel.app/opengraph-image.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
       <meta property="twitter:title" content="アートワインバー　コンペ" />
       <meta property="twitter:description" content="アートワインバー名古屋デザインコンペティション2024" />
-      <meta property="twitter:image" content="https://competition-cst.vercel.app//twitter-image.png" />
+      <meta property="twitter:image" content="https://competition-cst.vercel.app/twitter-image.png" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@Tomas_engineer" />
 
