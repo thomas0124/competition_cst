@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  padding-top: 0;
+  transition: padding-top 0.3s ease-in-out;
+}
+
+body.menu-open {
+  padding-top: 12rem; /* メニューの高さに応じて調整してください */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -64,3 +74,4 @@
     @apply bg-background text-foreground;
   }
 }
+
