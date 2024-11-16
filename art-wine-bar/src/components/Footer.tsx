@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return(
     <footer className="bg-gray-800 text-white p-4 mt-8">
-        <p className="mb-3">作品提出先: <Mail className="inline" /> artwinebar@example.com</p>
+        <p className="mb-3">作品提出先: <Mail className="inline" /> awb.nagoya.compe@gmail.com</p>
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <TooltipProvider>
             <div className="flex flex-wrap gap-4">
