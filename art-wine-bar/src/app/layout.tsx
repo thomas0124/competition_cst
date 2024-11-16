@@ -25,6 +25,13 @@ export default function RootLayout({
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+
+      <meta property="twitter:title" content="アートワインバー　コンペ" />
+      <meta property="twitter:description" content="アートワインバー名古屋デザインコンペティション2024" />
+      <meta property="twitter:image" content="https://portfolio-thomas0124.vercel.app/twitter-image.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@Tomas_engineer" />
+
       <body className={inter.className}>{children}</body>
     </html>
   );
