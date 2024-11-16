@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { MapPin, Clock, Calendar } from 'lucide-react'
+import { MapPin, Clock, Calendar, ExternalLink } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -37,7 +37,7 @@ const Main = () => {
       <section id="about" className="space-y-4">
         <h2 className="text-3xl font-bold">コンペ概要</h2>
         <p>アートワインバー名古屋デザインコンペティション2024</p>
-        <p>テーマ：「芸術とワインの融合」</p>
+        <p>テーマ：「アートとワインで楽しむ豊かな空間」</p>
         <Card>
           <CardHeader>
             <CardTitle>締め切り</CardTitle>
@@ -51,32 +51,53 @@ const Main = () => {
             <Link href="/competition-details.pdf" target="_blank">コンペ要項PDF</Link>
           </Button>
           <Button asChild>
-            <Link href="/competition-flyer.jpg" target="_blank">フライヤー</Link>
+            <Link href="/flyer.jpg" target="_blank">フライヤー</Link>
           </Button>
         </div>
       </section>
 
       <section id="entry" className="space-y-4">
-        <h2 className="text-3xl font-bold">参加フォーム</h2>
-        <form className="space-y-4">
-          <Input type="text" placeholder="お名前" required />
-          <Input type="email" placeholder="メールアドレス" required />
-          <Textarea placeholder="作品コンセプト" required />
-          <Button type="submit">送信</Button>
-        </form>
+      <h2 className="text-3xl font-bold">参加申し込み</h2>
+        <Card>
+          <CardHeader>
+            <CardTitle>コンペ申し込みフォーム</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>以下のリンクから申し込みフォームにアクセスしてください。</p>
+          </CardContent>
+          <CardFooter>
+            <Button asChild>
+              <Link href="https://forms.gle/A5xJTuwavyFEDb7X6" target="_blank" rel="noopener noreferrer">
+                申し込みフォームへ <ExternalLink className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </CardFooter>
+        </Card>
       </section>
 
       <section className="space-y-4">
         <h2 className="text-3xl font-bold">ブラッシュアップイベント</h2>
         <Card>
           <CardHeader>
-            <CardTitle>アーティストによる作品相談会</CardTitle>
+            <CardTitle className="pb">
+              <p className="pb-1">アートワインバーって実際どんな場所？</p> <br />
+              <p>アートワインバー現社長が30人限定のトークセッションを開催！</p>
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <p><Calendar className="inline mr-2" />2024年X月X日</p>
-            <p><Clock className="inline mr-2" />14:00 - 16:00</p>
+            <p><Calendar className="inline mr-2" />2024年12月21日</p>
+            <p><Clock className="inline mr-2" />セッション①: 11:00 - 13:00</p>
+            <p><Clock className="inline mr-2" />セッション②: 14:30 - 16:30</p>
+            <p><Clock className="inline mr-2" />セッション③: 18:00 - 20:00</p>
             <p><MapPin className="inline mr-2" />アートワインバー名古屋</p>
           </CardContent>
+          <CardFooter>
+            <Button asChild>
+              <Link href="https://forms.gle/HNAHSb6i2vw83cDDA" target="_blank" rel="noopener noreferrer">
+                ブラッシュアップイベント申し込み <ExternalLink className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </CardFooter>
         </Card>
       </section>
 
@@ -87,26 +108,7 @@ const Main = () => {
 
       <section id="access" className="space-y-4">
         <h2 className="text-3xl font-bold">アクセス</h2>
-        <div className="grid md:grid-cols-2 gap-4">
-          <Card>
-            <CardHeader>
-              <CardTitle>アートワインバー名古屋</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p><strong>車でのアクセス：</strong>〇〇インターから約10分</p>
-              <p><strong>公共交通機関：</strong>〇〇駅から徒歩5分</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>TONKAN名古屋</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p><strong>車でのアクセス：</strong>〇〇インターから約15分</p>
-              <p><strong>公共交通機関：</strong>〇〇駅から徒歩8分</p>
-            </CardContent>
-          </Card>
-        </div>
+        <p className="text-lg font-semibold text-red-600">公共交通機関のご利用をお願いします</p>
       </section>
     </main>
   )
