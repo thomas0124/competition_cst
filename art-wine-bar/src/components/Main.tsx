@@ -5,15 +5,13 @@ import Link from 'next/link'
 import { MapPin, Clock, Calendar, ExternalLink } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 const Main = () => {
   const [countdown, setCountdown] = useState('')
 
   useEffect(() => {
-    const targetDate = new Date('2024-12-31T23:59:59').getTime()
+    const targetDate = new Date('2025-01-31T23:59:59').getTime()
     
     const updateCountdown = () => {
       const now = new Date().getTime()
@@ -51,7 +49,7 @@ const Main = () => {
             <Link href="/competition-details.pdf" target="_blank">コンペ要項PDF</Link>
           </Button>
           <Button asChild>
-            <Link href="/flyer.jpg" target="_blank">フライヤー</Link>
+            <Link href="/poster.pdf" target="_blank">フライヤー</Link>
           </Button>
         </div>
       </section>
@@ -81,7 +79,7 @@ const Main = () => {
           <CardHeader>
             <CardTitle className="pb">
               <p className="pb-1">アートワインバーって実際どんな場所？</p> <br />
-              <p>アートワインバー現社長が30人限定のトークセッションを開催！</p>
+              <p>アートワインバー現社長が30人限定のアートセッションを開催！</p>
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -103,7 +101,37 @@ const Main = () => {
 
       <section className="space-y-4">
         <h2 className="text-3xl font-bold">審査委員</h2>
-        <p>近日公開</p>
+        <div className="grid gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>武藤 隆</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>大同大学 教授</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>諸江 一紀</CardTitle>
+            </CardHeader>
+          <CardContent>
+            <p>愛知淑徳大学 教授</p>
+          </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>吉元 学</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>愛知淑徳大学 教授</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>建築系企業様</CardTitle>
+            </CardHeader>
+          </Card>
+        </div>
       </section>
 
       <section id="access" className="space-y-4">

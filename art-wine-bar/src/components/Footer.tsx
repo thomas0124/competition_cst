@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Mail, Globe } from "lucide-react"
+import { Instagram, Mail, Globe } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import {
   Tooltip,
@@ -7,7 +7,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-
 
 const Footer = () => {
   return(
@@ -18,7 +17,7 @@ const Footer = () => {
             <div className="flex flex-wrap gap-4">
             <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="icon" asChild className="relative">
+              <Button variant="ghost" size="icon" asChild className="text-white hover:text-gray-300 hover:bg-gray-700">
                 <Link
                     href="https://www.instagram.com/artwinebar_nagoya_design_conpe"
                     className="flex items-center gap-2"
@@ -35,7 +34,7 @@ const Footer = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild className="text-white hover:text-gray-300 hover:bg-gray-700">
                 <Link
                   href="https://www.instagram.com/artwinebarnagoya0w0"
                   target="_blank"
@@ -53,7 +52,7 @@ const Footer = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild className="text-white hover:text-gray-300 hover:bg-gray-700">
                 <Link
                   href="https://www.instagram.com/tonkan_nagoya"
                   target="_blank"
@@ -71,7 +70,7 @@ const Footer = () => {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild className="text-white hover:text-gray-300 hover:bg-gray-700">
                 <Link
                   href="https://artwinebar-nagoya.com"
                   target="_blank"
