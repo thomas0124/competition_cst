@@ -11,7 +11,6 @@ import {
 const Footer = () => {
   return(
     <footer className="bg-gray-800 text-white p-4 mt-8">
-        <p className="mb-3">作品提出先: <Mail className="inline" /> awb.nagoya.compe@gmail.com</p>
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <TooltipProvider>
             <div className="flex flex-wrap gap-4">
@@ -87,14 +86,6 @@ const Footer = () => {
               </Tooltip>
             </div>
           </TooltipProvider>
-          <div className="mt-4 md:mt-0">
-                <p>協賛企業</p>
-                <div className="flex space-x-4">
-                <div className="w-16 h-8 bg-gray-300"></div>
-                <div className="w-16 h-8 bg-gray-300"></div>
-                <div className="w-16 h-8 bg-gray-300"></div>
-          </div>
-        </div>
         </div>
     </footer>
   )

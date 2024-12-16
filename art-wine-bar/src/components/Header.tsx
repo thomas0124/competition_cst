@@ -48,36 +48,7 @@ export default function Header() {
               </button>
             )}
           </div>
-          
-          <div 
-            className={`
-              md:flex md:space-x-8 md:p-4 md:items-center
-              ${isMobile ? (isOpen ? 'block' : 'hidden') : 'flex'}
-              ${isMobile ? 'border-t border-white' : ''}
-            `}
-          >
-            <Link 
-              href="#about" 
-              className="block p-4 md:p-0 hover:bg-red-700 md:hover:bg-transparent md:hover:underline"
-              onClick={closeMenu}
-            >
-              概要
-            </Link>
-            <Link 
-              href="#entry" 
-              className="block p-4 md:p-0 hover:bg-red-700 md:hover:bg-transparent md:hover:underline"
-              onClick={closeMenu}
-            >
-              参加
-            </Link>
-            <Link 
-              href="#access" 
-              className="block p-4 md:p-0 hover:bg-red-700 md:hover:bg-transparent md:hover:underline"
-              onClick={closeMenu}
-            >
-              アクセス
-            </Link>
-          </div>
+  
         </nav>
       </div>
     </header>
